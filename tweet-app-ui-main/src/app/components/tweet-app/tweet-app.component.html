@@ -1,0 +1,113 @@
+<app-tweet-app-headerbar></app-tweet-app-headerbar>
+<div class="tweet-app-main">
+    <div id="tweetAppWrapper" style="margin-top: 10%;">
+        <ng-container *ngIf="anotherTweetBool">
+            <!-- <p style="text-align: center;">{{anotherTweetUsername}}</p> -->
+            <h3 style="text-align: center;">
+                <fa-icon [icon]="profileIcon"></fa-icon>
+                @{{anotherTweetUsername}}
+            </h3>
+        </ng-container>
+        <ng-container *ngIf="anotherTweetBool && allTweet?.length === 0">
+            <p style="text-align: center;">No Tweet for this User!</p>
+        </ng-container>
+
+        <div class="container">
+            <div *ngIf="!anotherTweetBool">
+                <h3>
+                    <fa-icon [icon]="profileIcon"></fa-icon>
+                    Welcome @{{userName}}
+                </h3>
+                <div>
+                    <textarea style="width: 100%; height: 5rem;" placeholder="What's happening?"
+                        [(ngModel)]="addTweetMessage" (input)="onchangeTweet();checkTweet()"
+                        [mention]="items" maxlength="144"></textarea>
+                </div>
+
+                <div *ngIf="invalidAddTweet">
+                    <div class="error align-left">Length must be below 144 characters</div>
+                </div>
+
+
+                <div>
+                    <button style="margin-top: 1%; margin-left: 90%;" [disabled]="disableButton" class="btn btn-success"
+                        type="button" (click)="addTweet()"> Add Tweet </button>
+                </div>
+            </div>
+            <ng-container *ngFor="let tweet of allTweet">
+                <div class="userTweet">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <b>{{tweet.userName}} : </b> {{tweet.tweet}}
+                        </div>
+                        <div style="float: right;">{{tweet.date | date:'short'}}</div>
+                    </div>
+                    <div class="col-sm-3" style="text-align: left" id="actionButtonsWrapper">
+
+                        <fa-icon [icon]="likeIcon" (click)="likeTweet(tweet)"
+                            [style.color]="tweet.myLike ? 'red' : 'white'"
+                            [styles]="{'margin':'5px','background':'transparent'}" size="2x">
+
+                        </fa-icon>
+                        <span style="position: relative; top: -10px;">{{tweet.likeCount}}</span>
+
+
+                        <fa-icon [icon]="replyIcon" (click)="replyToTweet(tweet)"
+                            [styles]="{'margin':'5px','color': 'ghostwhite'}" size="2x">
+                        </fa-icon>
+
+
+
+                        <fa-icon [icon]="editIcon" *ngIf="userName == tweet.userName" size="2x"
+                            [styles]="{'margin':'5px','background':'transparent','color': 'ghostwhite'}"
+                            (click)="editTweet(tweet)"></fa-icon>
+
+
+                        <fa-icon [icon]="deleteIcon" *ngIf="userName == tweet.userName"
+                            [styles]="{'margin':'5px','color':'red'}" (click)="deleteTweet(tweet)" size="2x"></fa-icon>
+                    </div>
+                    <div *ngIf="tweet.editTweetBool">
+                        <textarea style="width: 100%; height: 2.7rem;" placeholder="Edited to Tweet"
+                            [(ngModel)]="tweet.tweet" (input)="checkTweetEdit(tweet)" [mention]="items" maxlength="144" ></textarea>
+                        <div *ngIf="tweet.invalidEditTweet">
+                            <div style="color: red;" class="error align-left">Length must be below 144 characters</div>
+                        </div>
+                        <button [disabled]="!tweet.tweet" class="replyButton"
+                            type="button" (click)="updateTweet(tweet)">
+                            Save Tweet </button>
+                        <button class="cancelButton ml-2" type="button" (click)="tweet.editTweetBool = false;"> Cancel
+                        </button>
+
+
+
+                    </div>
+
+                    <div *ngIf="tweet.takeReplyBool">
+                        <textarea style="width: 100%; height: 2.7rem;" placeholder="Reply to Tweet"
+                            [(ngModel)]="replayTweetMessage" (input)="checkTweetReply(tweet)"
+                            [mention]="items" maxlength="144"></textarea>
+                        <div *ngIf="tweet.invalidReplyTweet">
+                                <div class="error align-left">Length must be below 144 characters</div>
+                        </div>
+                        <button [disabled]="!replayTweetMessage" class="replyButton" type="button"
+                            (click)="replyTweet(tweet)"> Reply Tweet </button>
+                        <button class="cancelButton ml-2" type="button" (click)="tweet.takeReplyBool = false;"> Cancel
+                        </button>
+                    </div>
+                    <div style="clear:both"></div>
+                    <ng-container *ngFor="let reply of tweet.reply.reverse()">
+                        <b>replies: {{reply.userName}}</b>
+                        {{reply.reply}}
+
+                        <div style="float: right;">{{reply.date | date:'short'}}</div>
+                        <br>
+                    </ng-container>
+
+                    <br>
+                </div>
+            </ng-container>
+
+        </div>
+
+    </div>
+</div>

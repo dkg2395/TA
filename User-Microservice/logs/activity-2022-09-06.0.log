@@ -1,0 +1,254 @@
+2022-09-06_21-07-18 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-09-06_21-07-18 [restartedMain] INFO  c.t.user.AuthorizationApplication - Starting AuthorizationApplication using Java 16.0.2 on LTIN295918 with PID 28960 (C:\Users\905354\Documents\CDE_FSE_1\Code Base\Backend-AWS\User-Microservice\target\classes started by 905354 in C:\Users\905354\Documents\CDE_FSE_1\Code Base\Backend-AWS\User-Microservice)
+2022-09-06_21-07-18 [restartedMain] INFO  c.t.user.AuthorizationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\905354\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/905354/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-core.jar
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 1 MongoDB repository interfaces.
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f369d70f-5d8c-3668-ae48-1a34bdd5c794
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8006 (http)
+2022-09-06_21-07-18 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8006"]
+2022-09-06_21-07-18 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-06_21-07-18 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-06_21-07-18 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2437 ms
+2022-09-06_21-07-18 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/16.0.2+7-67"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cogjava1938', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@1735df29], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@2e2d8780]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=tweetapp.cm4mkny.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@75acd6a3], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a4b5c0b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c384d1e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d1beb77, org.springframework.security.web.header.HeaderWriterFilter@1499bbf1, org.springframework.security.web.authentication.logout.LogoutFilter@6260267a, com.tweetapp.user.config.JwtRequestFilter@452a1f2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36121d99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bc861cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61aa7082, org.springframework.security.web.session.SessionManagementFilter@441b91fd, org.springframework.security.web.access.ExceptionTranslationFilter@5c95b3e4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f055c60]
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-09-06_21-07-18 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8006"]
+2022-09-06_21-07-18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8006 (http) with context path ''
+2022-09-06_21-07-18 [restartedMain] INFO  c.t.user.AuthorizationApplication - Started AuthorizationApplication in 13.282 seconds (JVM running for 14.294)
+2022-09-06_21-07-18 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06_21-07-18 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-06_21-07-18 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-09-06_21-07-18 [cluster-ClusterId{value='63176939ecde8e158c5fb519', description='null'}-srv-tweetapp.cm4mkny.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
+com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.tweetapp.cm4mkny.mongodb.net'.
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
+	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
+	... 2 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:430)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:214)
+	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
+	... 3 common frames omitted
+2022-09-06_21-07-18 [cluster-ClusterId{value='63176939ecde8e158c5fb519', description='null'}-srv-tweetapp.cm4mkny.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
+com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.tweetapp.cm4mkny.mongodb.net'.
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
+	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
+	... 2 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:430)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:214)
+	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
+	... 3 common frames omitted
+2022-09-06_21-07-18 [cluster-ClusterId{value='63176939ecde8e158c5fb519', description='null'}-srv-tweetapp.cm4mkny.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
+com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.tweetapp.cm4mkny.mongodb.net'.
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
+	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
+	... 2 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:430)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:214)
+	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
+	... 3 common frames omitted
+2022-09-06_21-07-18 [cluster-ClusterId{value='63176939ecde8e158c5fb519', description='null'}-srv-tweetapp.cm4mkny.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
+com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.tweetapp.cm4mkny.mongodb.net'.
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
+	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
+	... 2 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:430)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:214)
+	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
+	... 3 common frames omitted
+2022-09-06_21-07-18 [cluster-ClusterId{value='63176939ecde8e158c5fb519', description='null'}-srv-tweetapp.cm4mkny.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
+com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.tweetapp.cm4mkny.mongodb.net'.
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
+	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
+	... 2 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:430)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:214)
+	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
+	... 3 common frames omitted
+2022-09-06_21-07-18 [cluster-ClusterId{value='63176939ecde8e158c5fb519', description='null'}-srv-tweetapp.cm4mkny.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
+com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.tweetapp.cm4mkny.mongodb.net'.
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
+	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
+	... 2 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:430)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:214)
+	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
+	... 3 common frames omitted
+2022-09-06_21-07-18 [cluster-ClusterId{value='63176939ecde8e158c5fb519', description='null'}-srv-tweetapp.cm4mkny.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
+com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.tweetapp.cm4mkny.mongodb.net'.
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
+	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
+	... 2 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:430)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:214)
+	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
+	... 3 common frames omitted
+2022-09-06_21-09-28 [restartedMain] INFO  c.t.user.AuthorizationApplication - Starting AuthorizationApplication using Java 16.0.2 on LTIN295918 with PID 28960 (C:\Users\905354\Documents\CDE_FSE_1\Code Base\Backend-AWS\User-Microservice\target\classes started by 905354 in C:\Users\905354\Documents\CDE_FSE_1\Code Base\Backend-AWS\User-Microservice)
+2022-09-06_21-09-28 [restartedMain] INFO  c.t.user.AuthorizationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 1 MongoDB repository interfaces.
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f369d70f-5d8c-3668-ae48-1a34bdd5c794
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8006 (http)
+2022-09-06_21-09-28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8006"]
+2022-09-06_21-09-28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-06_21-09-28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-06_21-09-28 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 543 ms
+2022-09-06_21-09-28 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/16.0.2+7-67"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cogjava1938', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@7571097e], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@2e2d8780]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=tweetapp.rgoji1n.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-2ejoou-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@370f34a8], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1908871, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5da6763f, org.springframework.security.web.context.SecurityContextPersistenceFilter@787c44bb, org.springframework.security.web.header.HeaderWriterFilter@3e977a68, org.springframework.security.web.authentication.logout.LogoutFilter@20cb40a5, com.tweetapp.user.config.JwtRequestFilter@70d3ddce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1842b92b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d83d471, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d39473f, org.springframework.security.web.session.SessionManagementFilter@3e2331fb, org.springframework.security.web.access.ExceptionTranslationFilter@1d7fa423, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d40cebb]
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-srv-tweetapp.rgoji1n.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017 to client view of cluster
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-srv-tweetapp.rgoji1n.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017 to client view of cluster
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-srv-tweetapp.rgoji1n.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017 to client view of cluster
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-09-06_21-09-28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8006"]
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8006 (http) with context path ''
+2022-09-06_21-09-28 [restartedMain] INFO  c.t.user.AuthorizationApplication - Started AuthorizationApplication in 1.182 seconds (JVM running for 132.031)
+2022-09-06_21-09-28 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-09-06_21-09-28 [cluster-rtt-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2375}] to ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:2375}] to ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:1546}] to ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=547857200, setName='atlas-2ejoou-shard-0', canonicalAddress=ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, hosts=[ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017], passives=[], arbiters=[], primary='ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000083, setVersion=8, topologyVersion=TopologyVersion{processId=6317618ed416c017b7d24a25, counter=6}, lastWriteDate=Tue Sep 06 21:09:29 IST 2022, lastUpdateTimeNanos=899293199771500}
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=541543800, setName='atlas-2ejoou-shard-0', canonicalAddress=ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, hosts=[ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017], passives=[], arbiters=[], primary='ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=631761e2410cadcf22b0a043, counter=3}, lastWriteDate=Tue Sep 06 21:09:29 IST 2022, lastUpdateTimeNanos=899293200767300}
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000083 from replica set primary ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-rtt-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:1546}] to ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-rtt-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:2293}] to ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:2293}] to ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-28 [cluster-ClusterId{value='631769b0ecde8e158c5fb51a', description='null'}-ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=430310800, setName='atlas-2ejoou-shard-0', canonicalAddress=ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017, hosts=[ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017], passives=[], arbiters=[], primary='ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6317613a448ed6f8618b0378, counter=4}, lastWriteDate=Tue Sep 06 21:09:31 IST 2022, lastUpdateTimeNanos=899295437547800}
+2022-09-06_21-09-47 [restartedMain] INFO  c.t.user.AuthorizationApplication - Starting AuthorizationApplication using Java 16.0.2 on LTIN295918 with PID 28960 (C:\Users\905354\Documents\CDE_FSE_1\Code Base\Backend-AWS\User-Microservice\target\classes started by 905354 in C:\Users\905354\Documents\CDE_FSE_1\Code Base\Backend-AWS\User-Microservice)
+2022-09-06_21-09-47 [restartedMain] INFO  c.t.user.AuthorizationApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 1 MongoDB repository interfaces.
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f369d70f-5d8c-3668-ae48-1a34bdd5c794
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8006 (http)
+2022-09-06_21-09-47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8006"]
+2022-09-06_21-09-47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-06_21-09-47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-06_21-09-47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 521 ms
+2022-09-06_21-09-47 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/16.0.2+7-67"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cogjava1938', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5284b081], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@2e2d8780]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=tweetapp.rgoji1n.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-2ejoou-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3ae58423], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69155613, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29c186d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c1da6c8, org.springframework.security.web.header.HeaderWriterFilter@4f1a2c31, org.springframework.security.web.authentication.logout.LogoutFilter@6abf9ae1, com.tweetapp.user.config.JwtRequestFilter@43d188ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52f5de7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b4a82d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3819fefe, org.springframework.security.web.session.SessionManagementFilter@6698d6e7, org.springframework.security.web.access.ExceptionTranslationFilter@10753fcb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@685eff88]
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-srv-tweetapp.rgoji1n.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017 to client view of cluster
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-srv-tweetapp.rgoji1n.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017 to client view of cluster
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-srv-tweetapp.rgoji1n.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017 to client view of cluster
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-09-06_21-09-47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8006"]
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8006 (http) with context path ''
+2022-09-06_21-09-47 [restartedMain] INFO  c.t.user.AuthorizationApplication - Started AuthorizationApplication in 1.15 seconds (JVM running for 151.559)
+2022-09-06_21-09-47 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:1555}] to ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=441722500, setName='atlas-2ejoou-shard-0', canonicalAddress=ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, hosts=[ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017], passives=[], arbiters=[], primary='ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=631761e2410cadcf22b0a043, counter=3}, lastWriteDate=Tue Sep 06 21:09:48 IST 2022, lastUpdateTimeNanos=899312405738500}
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:1918}] to ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=458647000, setName='atlas-2ejoou-shard-0', canonicalAddress=ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, hosts=[ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017], passives=[], arbiters=[], primary='ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000083, setVersion=8, topologyVersion=TopologyVersion{processId=6317618ed416c017b7d24a25, counter=6}, lastWriteDate=Tue Sep 06 21:09:48 IST 2022, lastUpdateTimeNanos=899312423601000}
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000083 from replica set primary ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [cluster-rtt-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:2542}] to ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [cluster-rtt-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:2304}] to ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:2304}] to ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [cluster-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=621288300, setName='atlas-2ejoou-shard-0', canonicalAddress=ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017, hosts=[ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017, ac-gwb0yuu-shard-00-00.rgoji1n.mongodb.net:27017], passives=[], arbiters=[], primary='ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6317613a448ed6f8618b0378, counter=4}, lastWriteDate=Tue Sep 06 21:09:49 IST 2022, lastUpdateTimeNanos=899312610786600}
+2022-09-06_21-09-47 [cluster-rtt-ClusterId{value='631769c4ecde8e158c5fb51b', description='null'}-ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:1545}] to ac-gwb0yuu-shard-00-01.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [http-nio-8006-exec-8] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06_21-09-47 [http-nio-8006-exec-8] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-06_21-09-47 [http-nio-8006-exec-8] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-09-06_21-09-47 [http-nio-8006-exec-8] INFO  c.t.u.c.JwtAuthenticationController - register url called
+2022-09-06_21-09-47 [http-nio-8006-exec-8] INFO  c.tweetapp.user.service.UserService - Inside register new user service
+2022-09-06_21-09-47 [http-nio-8006-exec-8] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:2544}] to ac-gwb0yuu-shard-00-02.rgoji1n.mongodb.net:27017
+2022-09-06_21-09-47 [RMI TCP Connection(19)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.

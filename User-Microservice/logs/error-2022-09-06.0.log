@@ -1,0 +1,2 @@
+2022-09-06_21-09-47 [http-nio-8006-exec-8] ERROR c.tweetapp.user.service.UserService - Username already exists
+2022-09-06_21-09-47 [http-nio-8006-exec-8] ERROR c.t.u.e.GlobalExceptionHandler - Username already exists
